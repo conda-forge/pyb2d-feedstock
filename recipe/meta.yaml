@@ -1,6 +1,5 @@
-
 {% set name = "pyb2d" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,11 +7,11 @@ package:
 
 source:
   url: https://github.com/pyb2d/pyb2d/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 7e634ba86ebbde490f50d245f3b4a0848d7d81f74e644b6945dbaa14986ea68b
+  sha256: c89e42984c65e8815d8f0481819f2016720235fd126b79eccbadd68952181c80
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
@@ -36,7 +35,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENCE.txt
-  summary: 'Python bindings for Box2D liquidfun'
+  summary: Python bindings for Box2D liquidfun
   description: |
     pyb2d is a python wrapper for Box2D and liquidfun
   doc_url: https://github.com/pyb2d/pyb2d
