@@ -1,5 +1,5 @@
 {% set name = "pyb2d" %}
-{% set version = "0.2.1" %}
+{% set version = "0.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/pyb2d/pyb2d/archive/refs/tags/{{ version }}.tar.gz
-  sha256: c89e42984c65e8815d8f0481819f2016720235fd126b79eccbadd68952181c80
+  sha256: 5d4ed36ff2e28783d406d97ccfd51bdf34223c122b887c3bcc3b6fd615bb1290
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
